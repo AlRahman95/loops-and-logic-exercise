@@ -65,12 +65,12 @@ myArr[myArr.length - 1];
 function checkForPalindrome(str) {
   var test = str;
   test = test.split("");
-  console.log(test);
+  var y = test.length;
+
   for (var x = 0; x < test.length; x++) {
-    var y = test.length;
+    y--;
     if (test[x] === test[y]) {
       return true;
-      y--;
     } else {
       return false;
     }
